@@ -1,0 +1,43 @@
+>>> print("Este programa permite clasificar numero mayor y menor de tres numeros enteros\n")
+Este programa permite clasificar numero mayor y menor de tres numeros enteros
+
+>>>
+>>> entero = int(input("Por favor incerte un numero: "))
+Por favor incerte un numero: entero1 = int(input("Por favor incerte otro numero: ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'entero1 = int(input("Por favor incerte otro numero: ")'
+>>> entero2 = int(input("Por favor incerte otro numero: "))
+Por favor incerte otro numero:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: ''
+>>>
+>>> if (entero > entero1) and (entero > entero2):
+...     mayor = entero
+... else:
+...     if (entero1 > entero) and (entero1 > entero2):
+...         mayor = entero1
+...     else:
+...         if (entero2 > entero) and (entero2 > entero1):
+...             mayor = entero2
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'entero' is not defined
+>>> if (entero < entero1) and (entero < entero2):
+...     menor = entero
+... else:
+...     if (entero1 < entero) and (entero1 < entero2):
+...         menor = entero1
+...     else:
+...         if (entero2 < entero) and (entero2 < entero1):
+...             menor = entero2
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'entero' is not defined
+>>> if (entero == entero1) or (entero == entero2) or (entero1 == entero2):
+...     print("Hay numeros iguales, porfavor ejecute el programa nuevamente y incerte los numeros.")
+... else:
+...     print(f"El numero mayor es'{mayor}'y el numero menor es '{menor}'")
